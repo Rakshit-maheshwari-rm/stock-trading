@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    background-color: rgb(250, 250, 250);
+    overflow: hidden;
+}
+
+.main-layout{
+    margin-top: 55px;
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 50px);
+    display: flex;
+}
+
+.main-content{
+    flex: 1;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+}
+
+.sidebar{
+  width: 450px;
+  max-width: 100%;
+  background-color: #fff;
+  height: 100%;
+  overflow-y: auto;
+  flex-shrink: 0; 
+}
+
+.text-orange{
+    color:rgb(245, 71, 27);
+}
+
+.text-12{
+    font-size: 12px;
+}
+
+.text-14{
+    font-size: 14px;
+}
+
+.action-btn{
+  width: 43px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.my-toast {
+  z-index: 9999;
+}
+
+.blur-btn:hover{
+    background: rgb(203, 203, 203);
+}
+
+.buy-btn{
+    background-color:   rgb(56, 104, 249);
+    color: white;
+}
+
+.sell-btn{
+    background-color:  rgb(245, 71, 27);
+    color: white;
+}
+
+.table-padding tbody td {
+  padding: 1rem;
+}
+
+.text-10{
+    font-size: 10px;
+}
+
+.text-18{
+    font-size: 18px;
+}
+
+.nav-link.active {
+    color: rgb(245, 71, 27) !important;
+}
+
+.nav-link.anchor:hover {
+    color: rgb(245, 71, 27) !important;
+}
+
+.kite_logo{
+    width: 21px;
+    height: 14px;
+}
+
+.list-unstyled li{
+    height: 40px;
+    border: 0.5px solid rgb(240, 239, 239);
+}
+
+th,td{
+    opacity: 0.75;
+}
+
+.sell{
+    color: rgb(222, 80, 75) !important;
+}
+
+.buy{
+    color: rgb(93, 131, 245) !important;
+}
+
+.rejected{
+    color: rgb(222, 80, 75) !important;
+}
+
+.positive{
+    color: rgb(56, 104, 249) !important;
+}
+
+.negative{
+    color: rgb(222, 80, 75) !important;
+}
+
+.complete{
+    color: rgb(76, 176, 89) !important;
+}
+
+.loss{
+    color: rgb(231, 65, 59) !important;
+}
+
+.profit{
+    color: rgb(11, 132, 27) !important;
+}
+
+.text-13{
+    font-size: 13px;
+}
+
+.act{
+    color: rgb(76, 176, 89) !important;
+}
+
+.blurred-row {
+  opacity: 0.4;    
+  filter: grayscale(70%);
+  pointer-events: none; 
+}
+
+.triggered{
+    color: rgb(7, 129, 244) !important;
+}
+
+.paused{
+    color: rgb(222, 80, 75) !important;
+}
+
+.schedule{
+    color: rgb(64, 159, 247) !important;
+}
+
+.enabled{
+    color: rgb(76, 176, 89) !important;
+}
+
+.disabled{
+    color: rgb(222, 80, 75) !important;
+}
+
+.alert-title{
+    color: rgb(64, 159, 247) !important;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.modal-header{
+    display: inline;
+}
+
+@media (max-width: 992px) {
+  .desktop-sidebar {
+    display: none !important;
+  }
+
+  .show-marketwatch {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .sidebar {
+    width: 360px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  .sidebar {
+    width: 330px;
+  }
+}
+
+@media (min-width: 992px) {
+  .desktop-sidebar {
+    display: block !important;
+  }
+
+  .show-marketwatch {
+    display: none !important;
+  }
+}

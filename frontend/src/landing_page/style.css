@@ -1,0 +1,52 @@
+html,body{
+    overflow-x: hidden;
+}
+
+.nav-link:hover{
+    color: rgb(56, 125, 209);
+}
+
+.navbar-links .nav-link.active {
+    color: rgb(56, 125, 209);
+}
+
+.footer a{
+    color: #545454;
+}
+
+.footer a:hover{
+    color: rgb(56, 125, 209);
+    opacity: 1;
+}
+
+.footer-icon i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.footer-icon i:hover{
+    color: rgb(56, 125, 209);
+    opacity: 1;
+}
+
+.footer ul li {
+    margin: 12px 0 12px 0;
+}
+
+.footer p{
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.footer-content a {
+    color: rgb(45, 120, 211);
+}
+
+.footer-content a:hover {
+    color: #545454;
+}
+
+.footer-last a{
+    font-size: 14px;
+    padding: 0 12px 0 12px;
+}

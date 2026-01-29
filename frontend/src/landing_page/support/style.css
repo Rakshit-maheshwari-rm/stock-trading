@@ -1,0 +1,62 @@
+.support-top{
+  background-color: rgb(245, 245, 245);
+}
+
+.btn-primary {
+  background-color: #397dd0;
+  font-weight:500;
+}
+
+.btn-primary:hover{
+  background-color: rgb(21, 21, 21);
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+}
+
+.search-box i {
+  position: absolute;
+  top: 68%;
+  left: 30px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 12px 15px 45px;
+  font-size: 18px;
+  border: 1px solid rgb(235, 234, 234);
+}
+
+.side-top{
+  background-color: rgb(255, 244, 230);
+  border-left: 6px solid orange;
+  text-decoration: underline rgb(56, 125, 209);
+}
+
+.side-top li:hover{
+  text-decoration: underline black;
+  opacity: 0.8;
+}
+
+.support-icon i {
+  font-size: 20px;
+  color: rgb(75, 127, 209);
+}
+
+.accordion-body ul li{
+  padding: 8px;
+}
+
+
+.support-side a ,.support-icon a{
+  color: rgb(75, 127, 209);;
+}
+
+.support-side a:hover,.support-icon a:hover{
+  color: black;
+  opacity: 0.8;
+}

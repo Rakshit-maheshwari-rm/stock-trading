@@ -1,0 +1,20 @@
+.text-small{
+    font-size: 13px;
+}
+
+.table-custom-padding td,
+.table-custom-padding th {
+    padding: 16px !important;
+}
+
+.charges-explain p{
+    font-size: 12px;
+    opacity: 0.75;
+    line-height: 2;
+}
+
+.charges-explain h6{
+    opacity: 0.75;
+    margin: 18px 0 18px 0;
+}
+

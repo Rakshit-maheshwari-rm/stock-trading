@@ -1,0 +1,26 @@
+.universe a{
+    color: black;
+}
+
+.universe img{
+    width: 200px;
+    height: 55px;
+}
+
+.universe img:hover{
+    opacity: 0.7;
+}
+
+.universe p{
+    font-size: 14px;
+    padding: 8px 0 8px 0;
+    opacity: 0.7;
+}
+
+.left-img{
+    max-width: 380px;
+}
+
+.right-img{
+    max-width: 420px;
+}
