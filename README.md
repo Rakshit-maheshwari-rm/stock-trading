@@ -83,6 +83,7 @@ By building this project, I learned:
 - Creating APIs with Node.js and Express.js
 - Database design and schema modeling with MongoDB & Mongoose
 - Middleware usage for auth handling
+- Authentication using Passport.js and passport-local-mongoose
 - Error handling with try-catch
 - Environment management with dotenv
 
@@ -98,3 +99,4 @@ This project is for learning purposes.
 It does not involve real money, real stocks, or live trading. Any stock prices or trades simulated in this application are for practice only.
 
 Do not use this project for real financial transactions.
+
