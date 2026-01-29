@@ -23,7 +23,8 @@ const PORT = process.env.PORT || 8000;
 const MONGODB_URL = process.env.MONGODB_URL;
 const CLIENT_URL = process.env.CLIENT_URL;
 const DASHBOARD_URL = process.env.DASHBOARD_URL;
-
+console.log(CLIENT_URL);
+console.log(DASHBOARD_URL);
 mongoose.connect(MONGODB_URL)
   .then(() => console.log('Database Connected!'));
 
@@ -54,8 +55,8 @@ app.use(
     cookie: {
       maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
     },
   })
 );
