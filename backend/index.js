@@ -30,6 +30,7 @@ mongoose.connect(MONGODB_URL)
 
 app.use(cookieParser());
 app.use(express.json());
+app.set("trust proxy", 1);
 
 app.use(
   cors({
