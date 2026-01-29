@@ -10,7 +10,6 @@ import Error from "./Error";
 import Sidebar from "./Sidebar";
 import Profile from "./Profile";
 import ProfileEdit from "./Profile-edit";
-import ProctectedRoute from "./ProctectedRoute";
 
 function Home() {
   
@@ -20,7 +19,6 @@ function Home() {
       <div className="main-layout d-flex">
         <Sidebar />
         <div className="main-content shadow-sm me-xxl-5 mt-5 p-3">
-          <ProctectedRoute>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/orders/*" element={<Orders />} />
@@ -33,7 +31,6 @@ function Home() {
             <Route path="/logout" element={<ProfileEdit/>}/>
             <Route path="*" element={<Error />} />
           </Routes>
-          </ProctectedRoute>
         </div>
         </div>
     </>
