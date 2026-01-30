@@ -1,10 +1,22 @@
 import './style.css';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
+import { useEffect, useState } from "react";
 
 function Navbar(){
 const navigate = useNavigate();
+const [user, setUser] = useState(null);
+  const API_URL = import.meta.env.VITE_API_URL;
+  const FRONT_URL = import.meta.env.VITE_FRONT_URL;
 
+  useEffect(() => {
+    axios.get(`${API_URL}/check`, { withCredentials: true })
+      .then(res => {
+        if (res.data.loggedIn) setUser(res.data.user);
+        else window.location.href = `${FRONT_URL}/login`;
+      })
+      .catch(() => window.location.href = `${FRONT_URL}/login`);
+  }, []);
 const handleLogout = async () => {
 try {
 await axios.post(
@@ -87,12 +99,12 @@ return (
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            DemoUser
+                            {user?.username}
                         </a>
                         <ul className="dropdown-menu dropdown-menu-end text-12">
                             <li className="dropdown-header small">
-                                <strong>DemoUser</strong><br />
-                                <span className="text-muted">Demouser@demo.com</span>
+                                <strong>{user?.username}</strong><br />
+                                <span className="text-muted">{user?.email}</span>
                             </li>
                             <li><a className="dropdown-item" href="/profile"><i className="fa-solid fa-user me-1"></i>My
                                     profile /
@@ -143,7 +155,7 @@ return (
             <div className="d-flex gap-3 align-items-center">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        DemoUser
+                        {user?.username}
                     </a>
 
                     <ul className="dropdown-menu dropdown-menu-end text-12">
