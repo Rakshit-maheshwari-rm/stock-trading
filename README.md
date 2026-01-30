@@ -3,7 +3,7 @@ A full-stack stock trading web application built using **HTML, CSS, Bootstrap, R
 This project is inspired by modern online brokerage platforms and is developed for **learning purposes**.
 
 ## Project Overview
-This project allows users to simulate stock trading activities including viewing stock prices, buying/selling stocks, tracking portfolio performance, and more.
+This project allows users to simulate stock trading activities including viewing stock prices, buying/selling stocks, tracking performance, and more.
 It provides a full-stack experience with a frontend, dashboard, and backend server with database integration.
 The interface is clean, responsive, and user-friendly, with features similar to real-world stock trading platforms.
 It’s ideal for learning modern full-stack web development, API integration, and data visualization.
@@ -89,7 +89,7 @@ By building this project, I learned:
 
 ### Full-Stack Skills
 - Connecting frontend and backend via Axios API calls
-- Managing user sessions with cookies
+- Managing user sessions
 - Handling asynchronous operations in React and Node.js
 - Understanding the flow of data
 
@@ -99,4 +99,5 @@ This project is for learning purposes.
 It does not involve real money, real stocks, or live trading. Any stock prices or trades simulated in this application are for practice only.
 
 Do not use this project for real financial transactions.
+
 
